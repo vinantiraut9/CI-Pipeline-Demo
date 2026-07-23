@@ -1,4 +1,4 @@
-name:CI Pipeline //This gives a name to the workflow.
+name: CI Pipeline //This gives a name to the workflow.
 On: //This tells GitHub When should the workflow start?
 Push: //Whenever code is uploaded to GitHub.
 branches:
