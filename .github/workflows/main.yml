@@ -1,0 +1,22 @@
+name:CI Pipeline //This gives a name to the workflow.
+On: //This tells GitHub When should the workflow start?
+Push: //Whenever code is uploaded to GitHub.
+branches:
+- main //Run the workflow only if code is pushed to the main branch.
+Jobs: //A Job is a collection of tasks.
+Build: //is the Job Name.
+runs-on: ubuntu-latest //GitHub automatically creates a temporary Ubuntu
+Linux virtual machine.
+Steps: //Every task is written here.
+- name: Checkout Repository
+uses: actions/checkout@v4 //GitHub downloads the repository into the
+Ubuntu machine.
+- name: Display Welcome Message
+run: echo "Continuous Integration Started" //Executes Linux commands.
+- name: Display Current Directory
+run: pwd //prints current directory.
+- name: List Repository Files
+run: ls //lists all project files.
+- name: Display Completion Message
+run: echo "Pipeline Executed Successfully" //prints messages.
+
