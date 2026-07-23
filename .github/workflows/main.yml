@@ -2,7 +2,7 @@ name: CI Pipeline //This gives a name to the workflow.
 On: //This tells GitHub When should the workflow start?
 Push: //Whenever code is uploaded to GitHub.
 branches:
-- main  //Run the workflow only if code is pushed to the main branch.
+- main //Run the workflow only if code is pushed to the main branch.
 Jobs: //A Job is a collection of tasks.
 Build: //is the Job Name.
 runs-on: ubuntu-latest //GitHub automatically creates a temporary Ubuntu Linux virtual machine.
